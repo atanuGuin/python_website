@@ -1,14 +1,14 @@
 def CONTAINER_NAME="portfolio"
 def CONTAINER_TAG="latest"
 // Update Docker hub User Account Details over here
-def DOCKER_HUB_USER="xxxxxxx"
+def DOCKER_HUB_USER="atanu92"
 def HTTP_PORT="80"
 def STOP_C="docker ps -a -q"
 
 node {
 
     stage('Checkout') {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/arunksingh16/python_website.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/atanuGuin/python_website.git']]])
 
     }
 
