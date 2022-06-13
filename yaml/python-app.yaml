@@ -26,7 +26,7 @@ spec:
         env: dev
     spec:
       containers:
-      - image: singharunk/portfolio:latest
+      - image: atanu92/portfolio:latest
         name: portfolio
         ports:
         - containerPort: 5000
